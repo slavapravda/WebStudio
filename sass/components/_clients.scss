@@ -1,20 +1,38 @@
 .clients {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-wrap: wrap;
+    margin: -15px;
+   
+    @include media (desktop){
+    flex-wrap: nowrap;
+    }
+    @media screen and (max-width: 479.98px) {
+      display: block;
+    }
   }
-  .clients__item:not(:last-child) {
-    margin-right: 30px;
+
+  .clients__item{
+    margin: 15px;
   }
 
   .clients__link {
     display: flex;
     align-items: center;
     justify-content: center;
-  
-    width: 170px;
     height: 92px;
-  
+   
+    @include media (mobile){
+      width: 210px;
+    }
+
+    @include media (tablet){
+      width: 226px;
+    }
+
+    @include media (desktop){
+      width: 170px;
+    }
+
     border: 1px solid #afb1b8;
     border-radius: 4px;
   

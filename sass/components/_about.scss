@@ -1,5 +1,8 @@
 .section-about {
   padding-top: 47px;
+  @include media (not-desktop){
+    display: none;
+  }
 }
 
 .about {

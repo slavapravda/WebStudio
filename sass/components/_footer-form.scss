@@ -1,16 +1,36 @@
 .form-footer{
-    display: flex;
-    align-items: end;
-    margin-left: 93px;
+    // display: flex;
+    // align-items: end;
+    // margin-left: 93px;
+    @include media (tablet){
+      display: flex;
+      flex-direction: column;
+      margin-top: 60px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    @include media (desktop){
+
+      align-items: end;
+      margin-left: 93px;
+      flex-direction: row;
+      // flex-wrap: wrap;
+      // width: 570px;
+
+    }
   }
   
   .form-footer__lable{
-    display: flex;
-    flex-direction: column;
-    margin-right: 12px;
+    // display: flex;
+    // flex-direction: column;
+    @include media (desktop){
+      margin-right: 12px;
+    }
+    
   }
 
 .form-footer__txt{
+    display: block;
     margin-bottom: 20px;
     font-weight: 700;
     line-height: 16px;
@@ -19,10 +39,12 @@
   }
   
   .form-footer__inpute{
-    width: 358px;
+    margin-bottom: 20px;
+    max-width: 450px;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 16px;
+
   
     font-size: 16px;
     line-height: 1.25;
@@ -35,6 +57,15 @@
     color: $whiteColor;
   
     cursor: pointer;
+
+    @include media (mobile){
+      width: 450px;
+    }
+    @include media (desktop){
+      width: 358px;
+      margin-bottom: 0px;
+    }
+
   }
   
   .form-footer__icon{
@@ -47,6 +78,8 @@
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 29px;
+    margin: 0 auto;
+
   
     width: 200px;
     
@@ -69,5 +102,7 @@
     &:hover,
     &:focus{
     background-color: #188CE8;
+
+
   }
   }

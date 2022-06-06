@@ -5,13 +5,35 @@
   }
   
   .footer__conteiner {
-    display: flex;
-    align-items: baseline;
+    
+    text-align: center;
+
+    @include media (mobile){
+
+    }
+    @include media (tablet){
+      display: flex;
+      flex-wrap: wrap;
+
+    }
+    @include media(desktop){
+      flex-wrap: nowrap;
+      align-items: baseline;
+      text-align: start;
+    }
   }
   
   .footer__left-side {
-    margin-right: 70px;
+    
+    @include media (tablet){
+      margin-left: 70px;
+    }
+    @include media (desktop){
+      margin-right: 70px;
+      margin-left: 0px;
+
   }
+}
 
   .footer__logo {
     display: block;
@@ -48,7 +70,24 @@
   
   /* footer right-side svg*/
   
-  
+  .invitation{
+    margin-bottom: 60px;
+
+   @media screen and (max-width:767.98px) {
+     margin-top: 60px;
+     
+   }
+
+    @include media (tablet){
+      margin-top: 0px;
+      margin-bottom: 0;
+      margin-left: 165px;
+    }
+    @include media (desktop){
+      margin-left: 0px;
+    }
+
+  }
   .invitation__title {
     margin-bottom: 20px;
     font-size: 14px;
@@ -59,6 +98,7 @@
   
   .social-media {
     display: flex;
+    justify-content: center;
 
     &__item:not(:last-child) {
         margin-right: 10px;

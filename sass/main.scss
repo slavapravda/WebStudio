@@ -1,10 +1,12 @@
 // utils
 @import "./utils/fonts";
 @import "./utils/variables";
+@import "./utils/mixins";
 // base
 @import "./base/normalize";
 @import "./base/reset";
 @import "./base/base";
+@import "./base/conteiner";
 // components
 @import "./components/logo";
 @import "./components/header";

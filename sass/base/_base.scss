@@ -8,25 +8,26 @@ body {
   background-color: $whiteColor;
 }
 
-.conteiner {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-}
-
 .section {
+  padding-bottom: 60px;
+  padding-top: 60px;
+
+  @include media (desktop){
   padding-top: 94px;
   padding-bottom: 94px;
+  }
 }
 
 .section-title {
-  margin-bottom: 50px;
-
-  font-size: 36px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
+  margin-bottom: 30px;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
-
   color: $titleTxtColor;
+
+  @include media (desktop){
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.33;
+  }
 }
