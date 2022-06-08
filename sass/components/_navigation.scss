@@ -38,13 +38,7 @@
     // display: block;
     // padding-top: 32px;
     // padding-bottom: 32px;
-    @include media (tablet){
-      display: block;
-      padding-top: 32px;
-      padding-bottom: 32px;
-    }
-  
-  
+
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 0.02em;
@@ -55,6 +49,13 @@
     &:focus {
       color: $accentColor;
     }
+    
+    @include media (tablet){
+      display: block;
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+    
     @media screen and (max-width:767.98px) {
     font-size: 40px;
     line-height: 1.17;
@@ -69,8 +70,9 @@
   }
   
   .navigation__link--current{
-    @include media (tablet){
     color: $accentColor;
+    @include media (tablet){
+
   
     &::after{
         position: absolute;
