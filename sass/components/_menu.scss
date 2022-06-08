@@ -14,6 +14,9 @@
     &:focus &__icon {
       fill: #2196f3;
     }
+    &.is-open {
+      position: fixed;
+    }
   
     .menu-close {
       display: none;
