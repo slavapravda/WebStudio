@@ -1850,7 +1850,7 @@ body {
 
 @media screen and (max-width: 479.98px) {
   .menu-networks {
-    font-size: inherit;
+    font-size: 10px;
   }
 }
 
